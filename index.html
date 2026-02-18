@@ -5,19 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Konectd Payments & Payroll</title>
   <meta name="description" content="Secure, streamlined payments and payroll — under the Konectd Solutions Family." />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap + Icons (needed for services strip grid + bi icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Site styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header" id="top">
     <div class="container header-inner">
+      <!-- Header “logo” -->
       <a class="brand" href="#top" aria-label="Konectd Payments & Payroll home">
         <span class="brand-mark" aria-hidden="true">K</span>
         <span class="brand-text">
-          <span class="brand-k">Konectd</span>
-          <span class="brand-sub">Payments & Payroll</span>
+          <span class="brand-k">Konectd Payments &amp; Payroll</span>
+          <span class="brand-sub">
+            Powered by
+            <img
+              class="brand-powered-logo"
+              src="final-logos_hori_ylw-wht.png"
+              alt="Konectd Solutions"
+              loading="lazy"
+            />
+          </span>
         </span>
       </a>
 
@@ -243,32 +260,57 @@
       </div>
     </section>
 
-    <section class="section" id="faq">
+    <!-- FULL SERVICES (required on every page) -->
+    <section class="services-strip" id="services">
       <div class="container">
-        <h2>FAQ</h2>
+        <h2>Full Konectd Solutions Services</h2>
+        <p>
+          Payments &amp; Payroll is one part of how we help businesses thrive. Konectd Solutions offers a complete ecosystem of services designed to support owners across growth, optimization, and transition.
+        </p>
 
-        <details class="faq">
-          <summary>Is this actually Konectd-branded?</summary>
-          <p>
-            Yes. We use strong platform partners, but your experience is delivered under the Konectd brand
-            (branding, communication, and your relationship).
-          </p>
-        </details>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="service-card">
+              <i class="bi bi-briefcase-fill service-icon"></i>
+              <div class="service-title">
+                <a href="https://krhein06.github.io/Konectd-advisory/index.html" target="_blank" rel="noopener">Advisory</a>
+              </div>
+              <p class="service-desc">Sell-side advisory, exit readiness, and growth strategy.</p>
+            </div>
+          </div>
 
-        <details class="faq">
-          <summary>Do you support both online and in-person payments?</summary>
-          <p>Yes—typical setups include card-present, ecommerce, and keyed-in / invoicing flows.</p>
-        </details>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="service-card">
+              <i class="bi bi-megaphone-fill service-icon"></i>
+              <div class="service-title"><a href="https://konectd.com" target="_blank" rel="noopener">Marketing</a></div>
+              <p class="service-desc">AI-powered acquisition, SEO, reputation, and re-engagement.</p>
+            </div>
+          </div>
 
-        <details class="faq">
-          <summary>Can I run payroll and timekeeping in one place?</summary>
-          <p>Yes—payroll, HR, and timekeeping can be managed under one login.</p>
-        </details>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="service-card">
+              <i class="bi bi-bank2 service-icon"></i>
+              <div class="service-title">Financing</div>
+              <p class="service-desc">Capital access, credit, and funding solutions.</p>
+            </div>
+          </div>
 
-        <details class="faq">
-          <summary>How do I get pricing?</summary>
-          <p>We’ll quote based on your payment volumes and payroll structure. Use the form below to start.</p>
-        </details>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="service-card highlighted-card">
+              <i class="bi bi-credit-card-2-front-fill service-icon"></i>
+              <div class="service-title">Payments &amp; Payroll</div>
+              <p class="service-desc">Streamlined payments and payroll processing.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="service-card">
+              <i class="bi bi-building-fill service-icon"></i>
+              <div class="service-title">Real Estate</div>
+              <p class="service-desc">Property strategy, leasing support, and investment guidance.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
