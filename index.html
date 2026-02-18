@@ -4,70 +4,99 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Konectd Payments & Payroll</title>
-  <meta name="description" content="Secure, streamlined payments and payroll — under the Konectd Solutions Family." />
+  <meta name="description" content="Payments processing and full-service payroll support—coordinated through Konectd." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap + Icons (needed for services strip grid + bi icons) -->
+  <!-- Bootstrap + Icons (for services strip grid + icons) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
   <!-- Site styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container topbar-inner">
+      <a href="tel:+15075095368"><i class="bi bi-telephone-fill"></i>(507) 509-5368</a>
+      <a href="mailto:hello@konectd.solutions">hello@konectd.solutions</a>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
   <header class="site-header" id="top">
-    <div class="container header-inner">
-      <!-- Header “logo” -->
-      <a class="brand" href="#top" aria-label="Konectd Payments & Payroll home">
-        <span class="brand-mark" aria-hidden="true">K</span>
-        <span class="brand-text">
-          <span class="brand-k">Konectd Payments &amp; Payroll</span>
-          <span class="brand-sub">
-            Powered by
-            <img
-              class="brand-powered-logo"
-              src="final-logos_hori_ylw-wht.png"
-              alt="Konectd Solutions"
-              loading="lazy"
-            />
-          </span>
-        </span>
-      </a>
+    <div class="container">
+      <div class="nav-wrap">
+        <a href="#top" class="brand-lockup" aria-label="Konectd Payments and Payroll home">
+          <div class="brand-title-row">
+            <span class="brand-wordmark">Konectd</span>
+            <span class="brand-inline-suffix">Payments &amp; Payroll</span>
+          </div>
+          <div class="brand-powered">
+            <span>Powered by</span>
+            <img src="final-logos_hori_ylw-wht.png" alt="Konectd Solutions" />
+          </div>
+        </a>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#payments">Payments</a></li>
+            <li><a href="#payroll">Payroll</a></li>
+            <li><a href="#how">How it Works</a></li>
+            <li><a class="nav-cta" href="#contact">Get Started</a></li>
+          </ul>
+        </nav>
 
-      <nav class="site-nav" id="site-nav">
-        <a href="#about">About</a>
-        <a href="#payments">Payments</a>
-        <a href="#payroll">Payroll</a>
-        <a href="#how">How it works</a>
-        <a class="btn btn-small" href="#contact">Get started</a>
-      </nav>
+        <button class="menu-btn" id="menuBtn" type="button"
+          aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
+          <i class="bi bi-list" style="font-size:1.2rem;"></i> Menu
+        </button>
+      </div>
     </div>
   </header>
 
+  <div class="menu-overlay" id="menuOverlay" tabindex="-1" aria-hidden="true"></div>
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <div class="container">
+      <div class="drawer-top d-flex align-items-center justify-content-between">
+        <div class="drawer-title">Menu</div>
+        <button class="menu-btn" id="menuCloseBtn" type="button" aria-label="Close menu">
+          <i class="bi bi-x-lg" style="font-size:1.05rem;"></i> Close
+        </button>
+      </div>
+      <div class="drawer-links">
+        <a href="#about">About</a>
+        <a href="#payments">Payments</a>
+        <a href="#payroll">Payroll</a>
+        <a href="#how">How it Works</a>
+        <a class="drawer-cta" href="#contact">Get Started</a>
+      </div>
+    </div>
+  </div>
+
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <h1>Payments + Payroll that run quietly in the background—so your business can move faster.</h1>
+          <h1>Payments + Payroll that reduce admin work and keep your business moving.</h1>
           <p>
-            Konectd Payments & Payroll helps small and mid-sized businesses streamline how money flows:
-            modern card processing, faster onboarding, and full-service payroll & HR support—under your Konectd relationship.
+            Konectd Payments &amp; Payroll helps small and mid-sized businesses streamline how money flows:
+            payments processing plus full-service payroll support—coordinated through one Konectd team.
           </p>
           <div class="hero-cta">
             <a class="btn" href="#contact">Schedule a consult</a>
             <a class="btn btn-ghost" href="#how">See how it works</a>
           </div>
           <div class="hero-badges">
-            <span class="badge">One login</span>
-            <span class="badge">Real support</span>
+            <span class="badge">One team</span>
+            <span class="badge">Clear accountability</span>
             <span class="badge">Built to scale</span>
           </div>
         </div>
@@ -75,22 +104,23 @@
         <div class="hero-card" role="region" aria-label="Quick benefits">
           <h2 class="h3">Why teams switch</h2>
           <ul class="checklist">
-            <li><strong>White-labeled experience</strong> (your brand, always)</li>
-            <li><strong>Fast onboarding</strong> with modern digital applications</li>
-            <li><strong>All-in-one platform</strong> for payroll, HR, timekeeping</li>
-            <li><strong>Dedicated support</strong> when it matters</li>
+            <li><strong>One trusted team</strong> guiding setup and ongoing support</li>
+            <li><strong>Fast onboarding</strong> with a clear, streamlined process</li>
+            <li><strong>Cleaner workflows</strong> to reduce manual work and errors</li>
+            <li><strong>Responsive support</strong> when it matters</li>
           </ul>
-          <p class="muted small">We partner with best-in-class providers, but you work with Konectd.</p>
+          <p class="muted small">Everything is coordinated through Konectd—one relationship from start to finish.</p>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
         <h2>Built for the Konectd Solutions Family</h2>
         <p class="lead">
-          This site is part of the Konectd Solutions portfolio—designed to connect business owners with a full ecosystem
-          (marketing, advisory, financing, real estate, and now payments & payroll).
+          Payments &amp; Payroll is part of the Konectd Solutions ecosystem—designed to support owners across growth,
+          optimization, and transition with connected services and real guidance.
         </p>
 
         <div class="grid-3">
@@ -100,7 +130,7 @@
           </div>
           <div class="card">
             <h3>Operational leverage</h3>
-            <p>Reduce manual work, minimize errors, and get cleaner reporting across vendors.</p>
+            <p>Reduce manual work, minimize errors, and simplify day-to-day administration.</p>
           </div>
           <div class="card">
             <h3>Growth-ready</h3>
@@ -110,34 +140,35 @@
       </div>
     </section>
 
+    <!-- PAYMENTS -->
     <section class="section alt" id="payments">
       <div class="container">
         <div class="split">
           <div>
             <h2>Payments</h2>
-            <p class="lead">Modern processing for in-person, online, and keyed-in transactions—built for speed and simplicity.</p>
+            <p class="lead">Accept payments confidently—in-person, online, and invoicing workflows—with support from Konectd.</p>
 
             <div class="grid-2">
               <div class="card">
-                <h3>Branded portal</h3>
-                <p>Statements, dashboards, notifications, and logins carry your brand—white-labeled end-to-end.</p>
+                <h3>Flexible acceptance</h3>
+                <p>Support for common payment scenarios: retail, service, ecommerce, and invoicing.</p>
               </div>
               <div class="card">
                 <h3>Streamlined onboarding</h3>
-                <p>Start applications quickly, capture digital signatures, and get merchants set up fast.</p>
+                <p>Clear setup steps and quick turnaround—guided by our team.</p>
               </div>
               <div class="card">
-                <h3>ISO-ready management</h3>
-                <p>Agent hierarchy tools, residual tracking, overrides, and performance monitoring in one dashboard.</p>
+                <h3>Better visibility</h3>
+                <p>Reporting and insights that make it easier to reconcile and understand cash flow.</p>
               </div>
               <div class="card">
-                <h3>Support that sticks</h3>
-                <p>Responsive support plus ticketing workflows to reduce churn and keep issues transparent.</p>
+                <h3>Real support</h3>
+                <p>When something comes up, you call Konectd—no runaround.</p>
               </div>
             </div>
 
             <div class="notice">
-              <strong>Brand-first:</strong> Payments are delivered under the Konectd brand. Our platform partners operate behind the scenes.
+              <strong>Konectd-led:</strong> Setup, onboarding, and support are coordinated through Konectd—one relationship from start to finish.
             </div>
           </div>
 
@@ -145,20 +176,20 @@
             <div class="side-box">
               <h3 class="h4">Common use cases</h3>
               <ul class="bullets">
-                <li>Retail & in-person card present</li>
-                <li>Restaurants & hospitality</li>
+                <li>Retail &amp; in-person card present</li>
+                <li>Restaurants &amp; hospitality</li>
                 <li>Service businesses with invoicing</li>
                 <li>Online / ecommerce</li>
               </ul>
             </div>
 
             <div class="side-box">
-              <h3 class="h4">What you’ll get</h3>
-              <ul class="checklist">
-                <li>Merchant application + underwriting workflow</li>
-                <li>Reporting & analytics dashboards</li>
-                <li>Chargeback support workflows</li>
-                <li>Integration-ready platform</li>
+              <h3 class="h4">What to prepare</h3>
+              <ul class="bullets">
+                <li>Monthly card volume &amp; average ticket</li>
+                <li>Current processor statement (if available)</li>
+                <li>How you accept payments today</li>
+                <li>Any invoicing or ecommerce needs</li>
               </ul>
             </div>
           </aside>
@@ -166,49 +197,41 @@
       </div>
     </section>
 
+    <!-- PAYROLL -->
     <section class="section" id="payroll">
       <div class="container">
         <div class="split">
           <div>
-            <h2>Payroll & HR</h2>
+            <h2>Payroll</h2>
             <p class="lead">
-              Full-service payroll with HR + timekeeping—simple monthly pricing and real people supporting your team.
+              Full-service payroll support with HR and timekeeping options—simple, organized, and guided by Konectd.
             </p>
 
             <div class="grid-2">
               <div class="card">
                 <h3>Payroll services</h3>
-                <p>Run payroll confidently with a platform designed to keep things simple and accurate.</p>
+                <p>Run payroll reliably with a straightforward process and clear reporting.</p>
               </div>
               <div class="card">
-                <h3>Time & attendance</h3>
-                <p>Track hours and manage timekeeping in the same ecosystem—one login.</p>
+                <h3>Time &amp; attendance</h3>
+                <p>Track hours and manage timekeeping with less manual admin work.</p>
               </div>
               <div class="card">
-                <h3>HR & handbooks</h3>
-                <p>Get guidance and documentation support so you’re not reinventing policies from scratch.</p>
+                <h3>HR support</h3>
+                <p>Policies, documentation, and guidance so you’re not reinventing the wheel.</p>
               </div>
               <div class="card">
-                <h3>Workers comp & more</h3>
-                <p>Support across core workforce needs so you can scale without admin drag.</p>
+                <h3>Help when it matters</h3>
+                <p>Questions happen—Konectd is your point of contact.</p>
               </div>
             </div>
 
             <div class="notice">
-              <strong>All-in-one:</strong> Payroll, HR, and time tracking are delivered under Konectd—no vendor sprawl.
+              <strong>Konectd-led:</strong> Payroll rollout and ongoing support are managed through Konectd—clear ownership and responsive service.
             </div>
           </div>
 
           <aside class="side">
-            <div class="side-box">
-              <h3 class="h4">How it works</h3>
-              <ol class="steps-mini">
-                <li>Fast setup with our team</li>
-                <li>One platform for payroll + HR</li>
-                <li>Ongoing, human support</li>
-              </ol>
-            </div>
-
             <div class="side-box">
               <h3 class="h4">Best for</h3>
               <ul class="bullets">
@@ -217,11 +240,22 @@
                 <li>Owners who want less admin</li>
               </ul>
             </div>
+
+            <div class="side-box">
+              <h3 class="h4">What to prepare</h3>
+              <ul class="bullets">
+                <li>Employee count &amp; pay frequency</li>
+                <li>Current payroll process/provider (if any)</li>
+                <li>Timekeeping needs</li>
+                <li>Any HR documentation goals</li>
+              </ul>
+            </div>
           </aside>
         </div>
       </div>
     </section>
 
+    <!-- HOW IT WORKS -->
     <section class="section alt" id="how">
       <div class="container">
         <h2>Our collaborative process</h2>
@@ -231,22 +265,22 @@
           <div class="step">
             <div class="step-num">1</div>
             <h3>Discovery</h3>
-            <p>We learn your business model, volumes, payroll needs, and current pain points.</p>
+            <p>We learn your workflows, volumes, payroll needs, and current pain points.</p>
           </div>
           <div class="step">
             <div class="step-num">2</div>
             <h3>Configuration</h3>
-            <p>We set up your branded portal(s), map integrations, and confirm workflows.</p>
+            <p>We set up the right structure and confirm the implementation plan.</p>
           </div>
           <div class="step">
             <div class="step-num">3</div>
             <h3>Onboarding</h3>
-            <p>Digital applications, underwriting/payroll setup, and team training—done with you.</p>
+            <p>Guided setup, training, and rollout—done with you, not to you.</p>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <h3>Support & optimization</h3>
-            <p>We stay involved—monitoring performance, resolving issues, and improving processes.</p>
+            <h3>Support &amp; optimization</h3>
+            <p>We stay involved to solve issues quickly and keep things running smoothly.</p>
           </div>
         </div>
 
@@ -260,12 +294,121 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+
+        <details class="faq">
+          <summary>Who will I work with?</summary>
+          <p>You’ll work directly with Konectd. We guide setup, onboarding, and ongoing support so you have one team to call.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Do you support both online and in-person payments?</summary>
+          <p>Yes—typical setups include card-present, ecommerce, invoicing, and keyed-in workflows.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Can I streamline payroll and timekeeping?</summary>
+          <p>Yes—depending on your needs, payroll and timekeeping can be coordinated to reduce manual steps.</p>
+        </details>
+
+        <details class="faq">
+          <summary>How do I get pricing?</summary>
+          <p>We’ll quote based on your payments volume and payroll structure. Use the form below to start.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Get started</h2>
+            <p class="lead">
+              Tell us what you’re trying to solve. We’ll respond with next steps, requirements, and a rollout plan.
+            </p>
+
+            <form class="form" action="mailto:hello@konectd.solutions" method="post" enctype="text/plain">
+              <div class="grid-2">
+                <label>
+                  First name
+                  <input name="first_name" autocomplete="given-name" required />
+                </label>
+                <label>
+                  Last name
+                  <input name="last_name" autocomplete="family-name" required />
+                </label>
+              </div>
+
+              <div class="grid-2">
+                <label>
+                  Email
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
+                <label>
+                  Phone
+                  <input type="tel" name="phone" autocomplete="tel" />
+                </label>
+              </div>
+
+              <label>
+                What do you need help with?
+                <select name="need">
+                  <option>Payments</option>
+                  <option>Payroll</option>
+                  <option>Both</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="Tell us about your business and what you want to improve."></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn" type="submit">Send</button>
+                <a class="btn btn-ghost" href="https://konectd.solutions/" target="_blank" rel="noreferrer">Visit Konectd Solutions</a>
+              </div>
+
+              <p class="small muted">
+                Prefer to book time? Add your scheduling link here once finalized.
+              </p>
+            </form>
+          </div>
+
+          <aside class="side">
+            <div class="side-box">
+              <h3 class="h4">Get in touch</h3>
+              <p><strong>Call:</strong> (507) 509-5368<br/>
+                 <strong>Email:</strong> hello@konectd.solutions</p>
+              <p class="muted small">Konectd Solutions Family • Payments &amp; Payroll</p>
+            </div>
+
+            <div class="side-box">
+              <h3 class="h4">Quick checklist</h3>
+              <ul class="bullets">
+                <li>Payments volume + average ticket</li>
+                <li>Employee count + pay frequency</li>
+                <li>Where admin time is being lost</li>
+                <li>Any workflow improvements you want</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <!-- FULL SERVICES (required on every page) -->
-    <section class="services-strip" id="services">
+    <section class="services-strip">
       <div class="container">
         <h2>Full Konectd Solutions Services</h2>
         <p>
-          Payments &amp; Payroll is one part of how we help businesses thrive. Konectd Solutions offers a complete ecosystem of services designed to support owners across growth, optimization, and transition.
+          Payments &amp; Payroll is one part of how we help businesses thrive. Konectd Solutions offers a complete ecosystem
+          of services designed to support owners across growth, optimization, and transition.
         </p>
 
         <div class="row g-4 justify-content-center">
@@ -314,84 +457,9 @@
       </div>
     </section>
 
-    <section class="section alt" id="contact">
-      <div class="container">
-        <div class="split">
-          <div>
-            <h2>Get started</h2>
-            <p class="lead">
-              Tell us what you’re trying to solve. We’ll respond with next steps, requirements, and a rollout plan.
-            </p>
-
-            <form class="form" action="mailto:hello@konectd.solutions" method="post" enctype="text/plain">
-              <div class="grid-2">
-                <label>
-                  First name
-                  <input name="first_name" autocomplete="given-name" required />
-                </label>
-                <label>
-                  Last name
-                  <input name="last_name" autocomplete="family-name" required />
-                </label>
-              </div>
-              <div class="grid-2">
-                <label>
-                  Email
-                  <input type="email" name="email" autocomplete="email" required />
-                </label>
-                <label>
-                  Phone
-                  <input type="tel" name="phone" autocomplete="tel" />
-                </label>
-              </div>
-              <label>
-                What do you need help with?
-                <select name="need">
-                  <option>Payments</option>
-                  <option>Payroll</option>
-                  <option>Both</option>
-                  <option>Not sure yet</option>
-                </select>
-              </label>
-              <label>
-                Message
-                <textarea name="message" rows="5" placeholder="Tell us about your business, current provider(s), and goals."></textarea>
-              </label>
-
-              <div class="form-actions">
-                <button class="btn" type="submit">Send</button>
-                <a class="btn btn-ghost" href="https://konectd.solutions/" target="_blank" rel="noreferrer">Visit Konectd Solutions</a>
-              </div>
-
-              <p class="small muted">
-                Prefer to book time? Add your scheduling link here (e.g., Calendly) once finalized.
-              </p>
-            </form>
-          </div>
-
-          <aside class="side">
-            <div class="side-box">
-              <h3 class="h4">Get in touch</h3>
-              <p><strong>Call:</strong> 507-509-5368<br/>
-                 <strong>Email:</strong> hello@konectd.solutions</p>
-              <p class="muted small">Konectd Solutions Family • Payments & Payroll</p>
-            </div>
-
-            <div class="side-box">
-              <h3 class="h4">What to prepare</h3>
-              <ul class="bullets">
-                <li>Monthly card volume & average ticket</li>
-                <li>Current processor & statement (if available)</li>
-                <li>Employee count + pay frequency</li>
-                <li>Timekeeping / HR needs</li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
@@ -401,17 +469,17 @@
           We combine intelligent AI tools with full-service agency expertise and strategic support to help you capture opportunities,
           build trust, and scale sustainably — all from one reliable platform.
         </p>
-        <p class="muted small">Call: 507-509-5368 • Email: hello@konectd.solutions</p>
+        <p class="muted small">Call: (507) 509-5368 • Email: hello@konectd.solutions</p>
       </div>
 
       <div>
         <h3 class="h5">The Full Konectd Solutions Portfolio</h3>
         <ul class="footer-links">
-          <li><a href="#" aria-current="page">Payment &amp; Payroll</a><span class="muted">Secure, streamlined payments and payroll — save time and reduce errors.</span></li>
-          <li><a href="https://krhein06.github.io/Konectd-advisory/index.html" target="_blank" rel="noreferrer">Advisory &amp; Consulting</a><span class="muted">Strategic guidance to scale smarter — from operations to growth planning.</span></li>
-          <li><a href="https://konectd.solutions/" target="_blank" rel="noreferrer">Real Estate</a><span class="muted">Property solutions, leasing support, and investment guidance tailored for business owners.</span></li>
+          <li><a href="#top" aria-current="page">Payment &amp; Payroll</a><span class="muted">Streamlined payments and payroll support—reduce admin and improve workflows.</span></li>
+          <li><a href="https://krhein06.github.io/Konectd-advisory/index.html" target="_blank" rel="noreferrer">Advisory &amp; Consulting</a><span class="muted">Strategic guidance to scale smarter—from operations to growth planning.</span></li>
+          <li><a href="https://konectd.solutions/" target="_blank" rel="noreferrer">Real Estate</a><span class="muted">Property strategy, leasing support, and investment guidance for business owners.</span></li>
           <li><a href="https://konectd.solutions/" target="_blank" rel="noreferrer">Financing</a><span class="muted">Access to capital, lines of credit, and funding options to fuel your next step.</span></li>
-          <li><a href="https://konectd.com/" target="_blank" rel="noreferrer">Marketing</a><span class="muted">AI-powered customer acquisition, reputation, local SEO, social, and re-engagement.</span></li>
+          <li><a href="https://konectd.com/" target="_blank" rel="noreferrer">Marketing</a><span class="muted">AI-powered acquisition, reputation, local SEO, social, and re-engagement.</span></li>
         </ul>
       </div>
     </div>
@@ -423,5 +491,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
