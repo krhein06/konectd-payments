@@ -15,29 +15,30 @@
     document.documentElement.style.setProperty('--stack-h', `${stackH}px`);
   }
 
+  // run ASAP
+  setStackHeights();
   window.addEventListener('load', setStackHeights);
   window.addEventListener('resize', setStackHeights);
+  window.addEventListener('orientationchange', setStackHeights);
 
   // ===== Footer year =====
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  // ===== Mobile menu behavior (matches Advisory CSS toggles) =====
+  // ===== Mobile menu behavior =====
   const menuBtn = document.getElementById('menuBtn');
   const closeBtn = document.getElementById('menuCloseBtn');
   const overlay = document.getElementById('menuOverlay');
   const drawer = document.getElementById('mobileDrawer');
 
   function openMenu() {
-    body.classList.add('is-open');
-    body.classList.add('menu-open');
+    body.classList.add('is-open', 'menu-open');
     if (menuBtn) menuBtn.setAttribute('aria-expanded', 'true');
     if (overlay) overlay.setAttribute('aria-hidden', 'false');
   }
 
   function closeMenu() {
-    body.classList.remove('is-open');
-    body.classList.remove('menu-open');
+    body.classList.remove('is-open', 'menu-open');
     if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
     if (overlay) overlay.setAttribute('aria-hidden', 'true');
   }
