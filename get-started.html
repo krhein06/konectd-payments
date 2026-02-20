@@ -1,1 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get Started | Konectd Payments & Payroll</title>
+  <meta name="description" content="Start your Konectd Payments & Payroll review. One team. Clear ownership. Streamlined onboarding." />
 
+  <!-- Bootstrap (grid) + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar" id="topBar">
+    <div class="container">
+      <a href="tel:+15075095368"><i class="bi bi-telephone-fill"></i>(507) 509-5368</a>
+      <a href="mailto:hello@konectd.solutions"><i class="bi bi-envelope-fill"></i>hello@konectd.solutions</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav-wrap">
+        <a href="index.html" class="brand-lockup">
+          <div class="brand-title-row">
+            <span class="brand-wordmark">Konectd</span>
+            <span class="brand-inline-suffix">Payments &amp; Payroll</span>
+          </div>
+          <div class="brand-powered">
+            <span>Powered by</span>
+            <img src="final-logos_hori_ylw-wht.png" alt="Konectd Solutions" />
+          </div>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="why-konectd.html">Why Konectd</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="payroll.html">Payroll</a></li>
+            <li><a class="nav-cta" href="get-started.html" aria-current="page">Get Started</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" type="button"
+          aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
+          <i class="bi bi-list" style="font-size:1.2rem;"></i> Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="drawer-title">Menu</div>
+        <button class="menu-btn" id="menuCloseBtn" type="button">
+          <i class="bi bi-x-lg"></i> Close
+        </button>
+      </div>
+      <div class="drawer-links">
+        <a href="why-konectd.html">Why Konectd</a>
+        <a href="payments.html">Payments</a>
+        <a href="payroll.html">Payroll</a>
+        <a class="drawer-cta" href="get-started.html">Get Started</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="kicker">Get Started</div>
+      <h1 class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        Let’s review your payments and payroll setup.
+      </h1>
+      <p style="color:#cbd5e1; font-size:1.1rem; max-width:56rem;">
+        We’ll start with a short conversation to understand your current setup,
+        identify friction points, and outline next steps. Clear process. No pressure.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="section-padding" style="padding-top:0;">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Form -->
+        <div class="col-lg-7">
+          <div class="card-dark">
+            <h3 style="color:#fff; font-weight:900; margin-bottom:1.5rem;">
+              Request a Review
+            </h3>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control bg-dark text-light border-secondary" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Company Name</label>
+                <input type="text" class="form-control bg-dark text-light border-secondary" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control bg-dark text-light border-secondary" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control bg-dark text-light border-secondary">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">What are you interested in?</label>
+                <select class="form-select bg-dark text-light border-secondary">
+                  <option>Payments</option>
+                  <option>Payroll</option>
+                  <option>Both</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label">Brief Description</label>
+                <textarea rows="4" class="form-control bg-dark text-light border-secondary"></textarea>
+              </div>
+
+              <button type="submit" class="btn-pill primary">
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-5">
+          <div class="card-dark">
+            <div class="kicker">What happens next</div>
+            <ul style="padding-left:1.2rem; color:#cbd5e1; font-weight:700;">
+              <li class="mb-3">We review your submission</li>
+              <li class="mb-3">Schedule a short discovery call</li>
+              <li class="mb-3">Outline clear next steps</li>
+              <li>No obligation to move forward</li>
+            </ul>
+          </div>
+
+          <div class="card-dark mt-4">
+            <div class="kicker">Prefer to talk now?</div>
+            <p style="color:#cbd5e1; margin-bottom:1rem;">
+              Call us directly to start the conversation.
+            </p>
+            <a href="tel:+15075095368" class="btn-pill">
+              (507) 509-5368
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL SERVICES STRIP -->
+  <section class="services-strip">
+    <div class="container">
+      <h2>Full Konectd Solutions Services</h2>
+      <p>
+        Payments &amp; Payroll is one part of how we help businesses thrive.
+        Konectd Solutions offers a complete ecosystem of services designed
+        to support owners across growth, optimization, and transition.
+      </p>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-briefcase-fill service-icon"></i>
+            <div class="service-title">
+              <a href="https://krhein06.github.io/Konectd-advisory/index.html" target="_blank">Advisory</a>
+            </div>
+            <p class="service-desc">Sell-side advisory, exit readiness, and growth strategy.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-megaphone-fill service-icon"></i>
+            <div class="service-title">
+              <a href="https://konectd.com" target="_blank">Marketing</a>
+            </div>
+            <p class="service-desc">AI-powered acquisition and engagement.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-bank2 service-icon"></i>
+            <div class="service-title">Financing</div>
+            <p class="service-desc">Capital access and funding solutions.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card highlighted-card">
+            <i class="bi bi-credit-card-2-front-fill service-icon"></i>
+            <div class="service-title">Payments &amp; Payroll</div>
+            <p class="service-desc">Streamlined payments and payroll processing.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-building-fill service-icon"></i>
+            <div class="service-title">Real Estate</div>
+            <p class="service-desc">Property strategy and investment guidance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="footer-powered">
+        Powered by <img src="final-logos_hori_ylw-wht.png" alt="Konectd Solutions" />
+      </div>
+      <div class="footer-copyright">
+        © <span id="year"></span> Konectd Payments &amp; Payroll
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
