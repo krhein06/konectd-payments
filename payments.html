@@ -1,1 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payments | Konectd Payments & Payroll</title>
+  <meta name="description" content="Payments processing coordinated through one Konectd team—setup, reporting, and support." />
 
+  <!-- Bootstrap (grid) + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar" id="topBar">
+    <div class="container">
+      <a href="tel:+15075095368"><i class="bi bi-telephone-fill"></i>(507) 509-5368</a>
+      <a href="mailto:hello@konectd.solutions"><i class="bi bi-envelope-fill"></i>hello@konectd.solutions</a>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav-wrap">
+        <a href="index.html" class="brand-lockup" aria-label="Konectd Payments and Payroll home">
+          <div class="brand-title-row">
+            <span class="brand-wordmark">Konectd</span>
+            <span class="brand-inline-suffix">Payments &amp; Payroll</span>
+          </div>
+          <div class="brand-powered">
+            <span>Powered by</span>
+            <img src="final-logos_hori_ylw-wht.png" alt="Konectd Solutions" />
+          </div>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="why-konectd.html">Why Konectd</a></li>
+            <li><a href="payments.html" aria-current="page">Payments</a></li>
+            <li><a href="payroll.html">Payroll</a></li>
+            <li><a class="nav-cta" href="get-started.html">Get Started</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" type="button"
+          aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
+          <i class="bi bi-list" style="font-size:1.2rem;"></i> Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay + drawer -->
+  <div class="menu-overlay" id="menuOverlay" tabindex="-1" aria-hidden="true"></div>
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="drawer-title">Menu</div>
+        <button class="menu-btn" id="menuCloseBtn" type="button" aria-label="Close menu">
+          <i class="bi bi-x-lg" style="font-size:1.05rem;"></i> Close
+        </button>
+      </div>
+      <div class="drawer-links">
+        <a href="why-konectd.html">Why Konectd</a>
+        <a href="payments.html">Payments</a>
+        <a href="payroll.html">Payroll</a>
+        <a class="drawer-cta" href="get-started.html">Get Started</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="kicker">Payments</div>
+      <h1 class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        Accept payments confidently—with a Konectd team guiding setup and support.
+      </h1>
+      <p style="color:#cbd5e1; font-size:1.1rem; max-width: 56rem;">
+        Whether you’re in-person, online, or invoicing, we help you simplify payments, improve visibility, and reduce friction.
+        You work with Konectd for onboarding and support—clear ownership from start to finish.
+      </p>
+
+      <div class="d-flex flex-wrap gap-3 mt-4">
+        <a class="btn-pill primary" href="get-started.html">Get a Payments Review</a>
+        <a class="btn-pill" href="#use-cases">Explore Use Cases</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE BENEFITS -->
+  <section class="section-padding" style="padding-top:0;">
+    <div class="container">
+      <h2 class="section-title">What we focus on</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card-dark">
+            <div class="kicker">Coverage</div>
+            <h3 style="color:#fff; font-weight:900;">Flexible acceptance</h3>
+            <p style="color:#cbd5e1; margin:0;">
+              Support for common workflows: card-present, ecommerce, invoicing, and keyed transactions.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-dark">
+            <div class="kicker">Visibility</div>
+            <h3 style="color:#fff; font-weight:900;">Cleaner reporting</h3>
+            <p style="color:#cbd5e1; margin:0;">
+              Reporting that helps you reconcile faster and understand your cash flow with less manual effort.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-dark">
+            <div class="kicker">Support</div>
+            <h3 style="color:#fff; font-weight:900;">A real point of contact</h3>
+            <p style="color:#cbd5e1; margin:0;">
+              When something comes up, you contact Konectd. We coordinate next steps and keep it moving.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4" style="background: rgba(14,165,233,0.08); border: 1px solid rgba(14,165,233,0.25); border-radius:16px; padding: 1rem 1.1rem;">
+        <strong style="color:#fff;">Konectd-led:</strong>
+        <span style="color:#cbd5e1; font-weight:700;">
+          Setup, onboarding, and support are coordinated through Konectd—one relationship from start to finish.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="section-padding" id="use-cases" style="padding-top:0;">
+    <div class="container">
+      <h2 class="section-title">Common use cases</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card-dark">
+            <div class="kicker">In-person</div>
+            <h3 style="color:#fff; font-weight:900;">Retail</h3>
+            <p style="color:#cbd5e1; margin:0;">Fast checkouts, reliable settlements, better daily visibility.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card-dark">
+            <div class="kicker">High-volume</div>
+            <h3 style="color:#fff; font-weight:900;">Restaurants</h3>
+            <p style="color:#cbd5e1; margin:0;">Payment flow that supports busy service cycles and multiple roles.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card-dark">
+            <div class="kicker">Invoices</div>
+            <h3 style="color:#fff; font-weight:900;">Service businesses</h3>
+            <p style="color:#cbd5e1; margin:0;">Accept payment through invoicing and reduce time-to-collect.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card-dark">
+            <div class="kicker">Online</div>
+            <h3 style="color:#fff; font-weight:900;">Ecommerce</h3>
+            <p style="color:#cbd5e1; margin:0;">Online acceptance with clear reporting and support when needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT TO PREPARE -->
+  <section class="section-padding" style="padding-top:0;">
+    <div class="container">
+      <h2 class="section-title">What to prepare for a review</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card-dark">
+            <div class="kicker">Payments snapshot</div>
+            <ul style="margin:0; padding-left:1.1rem; color:#cbd5e1; font-weight:700;">
+              <li class="mb-2">Monthly volume &amp; average ticket</li>
+              <li class="mb-2">How you accept payments today (in-person, online, invoices)</li>
+              <li class="mb-2">Any surcharging/cash-discount preferences (if applicable)</li>
+              <li class="mb-0">Current statement (optional but helpful)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card-dark">
+            <div class="kicker">Operational notes</div>
+            <ul style="margin:0; padding-left:1.1rem; color:#cbd5e1; font-weight:700;">
+              <li class="mb-2">Pain points (reconciliation, reporting, chargebacks, deposits)</li>
+              <li class="mb-2">Any POS/invoicing tools you use today</li>
+              <li class="mb-2">Locations and team roles (if relevant)</li>
+              <li class="mb-0">Goals (reduce admin, increase visibility, faster collections)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a class="btn-pill primary" href="get-started.html">Request a Payments Review</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding" style="padding-top:0;">
+    <div class="container">
+      <h2 class="section-title">Payments FAQ</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card-dark">
+            <h3 style="color:#fff; font-weight:900;">Do you support online and in-person payments?</h3>
+            <p style="color:#cbd5e1; margin:0;">
+              Yes—typical setups include card-present, ecommerce, invoicing, and keyed-in workflows.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card-dark">
+            <h3 style="color:#fff; font-weight:900;">How do I get pricing?</h3>
+            <p style="color:#cbd5e1; margin:0;">
+              We’ll quote based on volume and your workflow. Start with the Get Started page and we’ll follow up with next steps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL SERVICES (required on every page) -->
+  <section class="services-strip">
+    <div class="container">
+      <h2>Full Konectd Solutions Services</h2>
+      <p>
+        Payments &amp; Payroll is one part of how we help businesses thrive. Konectd Solutions offers a complete ecosystem
+        of services designed to support owners across growth, optimization, and transition.
+      </p>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-briefcase-fill service-icon"></i>
+            <div class="service-title">
+              <a href="https://krhein06.github.io/Konectd-advisory/index.html" target="_blank" rel="noopener">Advisory</a>
+            </div>
+            <p class="service-desc">Sell-side advisory, exit readiness, and growth strategy.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-megaphone-fill service-icon"></i>
+            <div class="service-title"><a href="https://konectd.com" target="_blank" rel="noopener">Marketing</a></div>
+            <p class="service-desc">AI-powered acquisition, SEO, reputation, and re-engagement.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-bank2 service-icon"></i>
+            <div class="service-title">Financing</div>
+            <p class="service-desc">Capital access, credit, and funding solutions.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card highlighted-card">
+            <i class="bi bi-credit-card-2-front-fill service-icon"></i>
+            <div class="service-title">Payments &amp; Payroll</div>
+            <p class="service-desc">Streamlined payments and payroll processing.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="service-card">
+            <i class="bi bi-building-fill service-icon"></i>
+            <div class="service-title">Real Estate</div>
+            <p class="service-desc">Property strategy, leasing support, and investment guidance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <h5>Konectd Solutions</h5>
+      <p class="footer-intro">
+        Konectd Solutions is your trusted partner for small and medium business growth.
+        We combine intelligent AI tools with full-service expertise and strategic support to help you capture opportunities,
+        build trust, and scale sustainably — all from one reliable platform.
+      </p>
+
+      <ul class="footer-links">
+        <li><a href="why-konectd.html">Why Konectd</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="payroll.html">Payroll</a></li>
+        <li><a href="get-started.html">Get Started</a></li>
+      </ul>
+
+      <div class="footer-contact">
+        Call: <a href="tel:+15075095368">(507) 509-5368</a> • Email: <a href="mailto:hello@konectd.solutions">hello@konectd.solutions</a>
+      </div>
+
+      <div class="footer-powered">
+        Powered by <img src="final-logos_hori_ylw-wht.png" alt="Konectd Solutions" />
+      </div>
+
+      <div class="footer-copyright">
+        © <span id="year"></span> Konectd Payments &amp; Payroll
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
